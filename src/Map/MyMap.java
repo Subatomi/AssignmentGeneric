@@ -3,8 +3,8 @@ package Map;
 import java.util.ArrayList;
 
 public class MyMap <A,B>{
-    private ArrayList<A> keys;
-    private ArrayList<B> values;
+    private ArrayList<A> keys = new ArrayList<>();
+    private ArrayList<B> values = new ArrayList<>();
 
     public void put(A key, B value){
         if(keys.contains(key)){

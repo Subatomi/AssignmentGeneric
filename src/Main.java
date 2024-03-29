@@ -1,15 +1,22 @@
+import Arithmetic.Arithmetic;
+import Map.MyMap;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+//        Arithmetic p = new Arithmetic<>(d232,55.332);
+//        System.out.println(p.add());
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        MyMap map = new MyMap();
+        map.put("anime1", "rezero");
+        map.put("anime2", "code geass");
+        map.put("anime3", "Jojo");
+        System.out.println(map.get("anime3"));
+        map.put("anime3", "Jojo s3");
+        System.out.println(map.get("anime3"));
+        map.remove("anime3");
+        System.out.println(map.get("anime3"));
+
     }
 }
